@@ -1,3 +1,13 @@
-<p>
-  chord-list works!
-</p>
+<div class="row pull-right">
+  <div class="col-sm-9">
+    <a
+      href="#"
+      class="list-group-item clearfix"
+      *ngFor="let chord of recipes">
+        <p class="list-group-item-heading">{{ chord.gNote }}</p>
+        <p class="list-group-item-text">{{ chord.cNote }}</p>
+        <p class="list-group-item-text">{{ chord.aNote }}</p>
+        <p class="list-group-item-text">{{ chord.eNote }}</p>
+    </a>
+  </div>
+</div>
